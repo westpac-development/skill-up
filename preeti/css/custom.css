@@ -1,0 +1,117 @@
+/*	Custom style sheet  */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+body {
+  background-color: #f0f3fa;
+  margin: 15px 20px;
+}
+body .no-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body .no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body .container {
+  background-color: #ffffff;
+  padding: 20px;
+}
+body .container ul {
+  list-style: none;
+  padding-left: 0px;
+}
+body .container nav ul li {
+  height: 40px;
+  width: auto;
+}
+body .container nav ul li.link-selected {
+  border-bottom: 5px solid red;
+}
+body .container nav ul li span {
+  color: #44b7b0;
+  font-size: 25px;
+  font-weight: 700;
+}
+body .container nav ul li a {
+  color: #000000;
+}
+body .container nav ul li a:hover {
+  text-decoration: none;
+}
+body .container nav hr {
+  margin-top: -10px;
+}
+body .container article .tiles {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body .container article .tiles li {
+  background-color: #FAFAFA;
+  margin-bottom: 10px;
+}
+body .container article .tiles li a {
+  line-height: 40px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #849AA5;
+}
+body .container article .tiles li a span.label-blue {
+  background-color: #8AC4F4;
+  padding: 3px 8px;
+  color: #FFFFFF;
+  font-style: normal;
+}
+body .container article .tiles li a span.label-grey {
+  background-color: #c6c6c8;
+  padding: 3px 8px;
+  color: #FFFFFF;
+  font-style: normal;
+}
+body .container article .tiles li a span.info-time {
+  font-style: italic;
+  padding-right: 15px;
+  color: #c6cbd6;
+}
+body .container article .tiles li a div.block-marine {
+  height: 40px;
+  width: 40px;
+  float: left;
+  background-color: #44B7B0;
+}
+body .container article .tiles li a div.block-red {
+  height: 40px;
+  width: 40px;
+  float: left;
+  background-color: #F2575D;
+}
+body .container article .tiles li a div.block-aqua {
+  height: 40px;
+  width: 40px;
+  float: left;
+  background-color: #8AC4F4;
+}
+body .container article .tiles li a div.block-gold {
+  height: 40px;
+  width: 40px;
+  float: left;
+  background-color: #DFBA48;
+}
+body .container article .tiles li a div.block-grey {
+  height: 40px;
+  width: 40px;
+  float: left;
+  background-color: #F2575D;
+}
+body .container article .tiles li a .glyphicon {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #FFFFFF;
+}
+body .container article .tiles li a:hover {
+  text-decoration: none;
+}
