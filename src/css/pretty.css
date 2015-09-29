@@ -82,6 +82,13 @@ body {
   background-color: #87CEFA;
   color: white;
 }
+.skill-1 {
+  padding: 1%;
+  background-color: antiquewhite;
+}
+.skill-1 ul {
+  list-style: none;
+}
 /*Styling the scroll-bar*/
 ::-webkit-scrollbar {
   width: 15px;
