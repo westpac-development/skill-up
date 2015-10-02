@@ -9,14 +9,14 @@ module.exports = function tasks (grunt) {
 		grunt.registerTask('assets', []);
 
 		// javascript
-	   grunt.registerTask('scripts', ['lintjs', 'uglify']);
+		grunt.registerTask('scripts', []); //'lintjs', 'uglify'
 
 		// lint less
-	   grunt.registerTask('styles', ['less']);
+	   grunt.registerTask('styles', []); //'less'
 
 		// build
-		grunt.registerTask('build', ['html', 'scripts', 'styles']);
+		grunt.registerTask('build', ['html', 'assets', 'scripts', 'styles']);
 
-	   // Default task
-	   grunt.registerTask('default', ['connect', 'watch']);
+		// Default task
+		grunt.registerTask('default', ['build', 'connect', 'watch']);
 };
