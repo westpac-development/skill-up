@@ -1,22 +1,22 @@
-module.exports = function tasks (grunt) {
-	   //////////// tasks
+module.exports = function tasks(grunt) {
+  //////////// tasks
 
-		// grunt-w3c-validation
-		// a11y
-		grunt.registerTask('html', []);
+  // grunt-w3c-validation
+  // a11y
+  grunt.registerTask('html', ['grunt-html', 'accessibility']);
 
-		// grunt-icon
-		grunt.registerTask('assets', []);
+  // grunt-icon
+  grunt.registerTask('assets', []);
 
-		// javascript
-		grunt.registerTask('scripts', []); //'lintjs', 'uglify'
+  // javascript
+  grunt.registerTask('scripts', []); //'lintjs', 'uglify'
 
-		// lint less
-	   grunt.registerTask('styles', []); //'less'
+  // lint less
+  grunt.registerTask('styles', []); //'less'
 
-		// build
-		grunt.registerTask('build', ['html', 'assets', 'scripts', 'styles']);
+  // build
+  grunt.registerTask('build', ['html', 'assets', 'scripts', 'styles']);
 
-		// Default task
-		grunt.registerTask('default', ['build', 'connect', 'watch']);
+  // Default task
+  grunt.registerTask('default', ['build', 'connect', 'watch']);
 };
