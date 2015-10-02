@@ -1,9 +1,8 @@
 module.exports = function tasks(grunt) {
   //////////// tasks
-
   // grunt-w3c-validation
   // a11y
-  grunt.registerTask('html', ['grunt-html', 'accessibility']);
+  grunt.registerTask('html', ['htmllint', 'accessibility']); //'grunt-html',
 
   // grunt-icon
   grunt.registerTask('assets', []);
@@ -15,8 +14,8 @@ module.exports = function tasks(grunt) {
   grunt.registerTask('styles', []); //'less'
 
   // build
-  grunt.registerTask('build', ['html', 'assets', 'scripts', 'styles']);
+  grunt.registerTask('build', ['view', 'assets', 'scripts', 'styles']);
 
   // Default task
-  grunt.registerTask('default', ['build', 'connect', 'watch']);
+  grunt.registerTask('default', [ 'connect', 'watch']); //'build',
 };

@@ -15,7 +15,7 @@ module.exports = function(grunt) {
    grunt.loadTasks('grunt');
    grunt.loadTasks('grunt/tasks');
 
-
+};
 
 //   // ===========================================================================
 //   // CONFIGURE GRUNT ===========================================================
@@ -135,5 +135,3 @@ module.exports = function(grunt) {
 //   grunt.loadNpmTasks('grunt-contrib-connect');
 //   grunt.loadNpmTasks('grunt-include-replace');
 //   grunt.registerTask('default', ['connect','jshint', 'uglify', 'cssmin', 'less','copy','watch']);
-
-};
