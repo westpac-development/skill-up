@@ -1,25 +1,23 @@
 /***************************************************************************************************************************************************************
  *
- * less
+ * autoprefixer
  *
- * Compile less to css, minify and generate sourcemap
+ * parses CSS and adds vendor-prefixed CSS properties using the Can I Use database
  *
  **************************************************************************************************************************************************************/
 
-module.exports = function less(grunt) {
-	var less = {
+module.exports = function autoprefixer(grunt) {
+	var autoprefixer = {
 		options: {
-			compress: true,
-			yuicompress: true,
-			optimization: 2,
-			sourceMap: true,
-			sourceMapFilename: './**/map/css.map', // where file is generated and located
+
 		},
-		files: {
-			'dist/pretty.css': 'src/*.less'
+		dist: {
+			files: {
+				'pretty.css': 'pretty.css'
+			}
 		}
 	};
 
-	grunt.config.set('less', less);
+	grunt.config.set('autoprefixer', autoprefixer);
 
 };
