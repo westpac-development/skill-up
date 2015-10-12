@@ -2,10 +2,11 @@
 
 // our wrapper function (required by grunt and its plugins)
 // all configuration goes inside this function
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
    // load all grunt tasks matching the ['grunt-*', '@*/grunt-*'] patterns
    require('load-grunt-tasks')(grunt);
+   require('time-grunt')(grunt);
 
    // Project configuration.
    grunt.initConfig({
@@ -14,6 +15,9 @@ module.exports = function(grunt) {
 
    grunt.loadTasks('grunt');
    grunt.loadTasks('grunt/tasks');
+   grunt.loadTasks('grunt/tasks/Build');
+   grunt.loadTasks('grunt/tasks/Develop');
+   grunt.loadTasks('grunt/tasks/Setup');
 
 };
 

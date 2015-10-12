@@ -9,7 +9,7 @@
 module.exports = function watch(grunt) {
 	var watch = {
 		LESS: {
-			files: './**/*.less',
+			files: './src/css/*.less',
 			tasks: ['styles'],
 			options: {
 				livereload: true

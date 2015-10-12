@@ -1,0 +1,39 @@
+.img-container {
+  width: 100%;
+  height: auto;
+  border: 2px solid gray;
+  .layer-task-image,
+  .task-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    @media only screen and (min-width: 768px) {
+      /*x:;
+width: 372px;*/
+      height: auto;
+      margin: auto;
+    }
+    .layer-task-image {
+      background-color: gold;
+      &:hover {
+        display: block;
+      }
+    }
+  }
+  .inner-text {
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    width: 372px;
+    height: auto;
+    background-color: gray;
+    text-align: center;
+    p {
+      color: white;
+      height: 100%;
+      margin: 5%;
+      border: 1px solid white;
+      text-align: center;
+    }
+  }
+}

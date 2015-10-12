@@ -1,23 +1,20 @@
 /***************************************************************************************************************************************************************
  *
- * autoprefixer
+ * grunt-concurrent
  *
- * parses CSS and adds vendor-prefixed CSS properties using the Can I Use database
+ * concurrent grunt tasks.
  *
  **************************************************************************************************************************************************************/
 
-module.exports = function autoprefixer(grunt) {
-	var autoprefixer = {
-		options: {
+module.exports = function concurrent(grunt) {
+ var concurrent = {
+  target: {
+   tasks: ['copy', 'copy:balajee', 'copy:preeti'],
+   options: {
+    logConcurrentOutput: true
+   }
+  }
+ };
 
-		},
-		dist: {
-			files: {
-				'pretty.css': 'pretty.css'
-			}
-		}
-	};
-
-	grunt.config.set('autoprefixer', autoprefixer);
-
+ grunt.config.set('concurrent', concurrent);
 };

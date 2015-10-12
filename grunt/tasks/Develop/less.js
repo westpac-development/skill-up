@@ -7,19 +7,20 @@
  **************************************************************************************************************************************************************/
 
 module.exports = function less(grunt) {
-	var less = {
-		options: {
-			compress: true,
-			yuicompress: true,
-			optimization: 2,
-			sourceMap: true,
-			sourceMapFilename: './**/map/css.map', // where file is generated and located
-		},
-		files: {
-			'dist/pretty.css': 'src/*.less'
-		}
-	};
+   var less = {
+      prod: {
+         options: {
+            cleancss: true,
+            compress: true,
+            ieCompat: true,
+            report: 'min',
+         },
+         files: {
+            './dist/src/css/pretty.min.css': './dist/src/css/pretty.less'
+         },
+      }
+   };
 
-	grunt.config.set('less', less);
+   grunt.config.set('less', less);
 
 };
