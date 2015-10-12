@@ -22,7 +22,7 @@ module.exports = function copy(grunt) {
 
         {
           expand: true,
-          src: ['src/css/*.css', 'src/img/**', 'src/js/**', 'skill-repo/**', 'src/css/*.less'],
+          src: ['src/css/*.css', 'src/img/**', 'src/js/**', 'skill-repo/**', 'src/css/*.less', 'participants/**'],
           dest: 'dist/',
           filter: 'isFile'
  },
@@ -31,7 +31,7 @@ module.exports = function copy(grunt) {
         {
           expand: true,
           cwd: './',
-          src: ['src/css', '*.html', 'skill-repo/'],
+          src: ['src/css', '*.html', 'skill-repo/', 'participants/'],
           dest: 'dist/'
         },
 
