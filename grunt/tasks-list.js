@@ -23,7 +23,7 @@ module.exports = function tasks(grunt) {
   grunt.registerTask('setup', ['copy']);
 
   //Develop
-  grunt.registerTask('develop', ['setup', 'less', 'autoprefixer', 'concat', 'uglify', 'connect',
+  grunt.registerTask('develop', ['setup', 'less', 'autoprefixer', 'concat', 'uglify', 'imagemin', 'connect', 'htmlinspector',
     'watch']);
 
   //Build

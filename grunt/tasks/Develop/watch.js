@@ -17,7 +17,7 @@ module.exports = function watch(grunt) {
 		},
 		JS: {
 			files: './src/js/*.js',
-			tasks: ['scripts'],
+			tasks: ['uglify', 'concat'],
 			options: {
 				livereload: true,
 			}
@@ -28,6 +28,9 @@ module.exports = function watch(grunt) {
 			options: {
 				livereload: true,
 			}
+		},
+		ASSETS: {
+			files: './**/*.png'
 		}
 	};
 
